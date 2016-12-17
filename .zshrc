@@ -83,17 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias bek='USER=n_braun bundle exec knife'
-alias be='USER=n_braun bundle exec'
-alias beb='USER=n_braun bundle exec berks'
 alias git-pr='branch=$(git symbolic-ref HEAD | cut -d/ -f3); echo "Rebasing on origin/${branch}";git pull --rebase origin ${branch}'
 alias em='emacs --no-splash'
-alias kinit='kinit n.braun@CRITEOIS.LAN'
-eval "$(chef shell-init zsh)"
-export JAVA_HOME='/usr/lib/jvm/java-8-openjdk-amd64'
-export M2_HOME="$HOME/.m2/maven"
-export PATH="$PATH:$JAVA_HOME/bin:$M2_HOME/bin"
-export GIT_SSH=$(which ssh)
-export PASSWORD=$(cat ~/.password)
 
-export PATH="/home/nat/anaconda3/bin:$PATH"
+export PATH="~/anaconda3/bin:$PATH"
